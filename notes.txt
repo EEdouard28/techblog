@@ -1,0 +1,9 @@
+const bcrypt = require("bcrypt);
+
+
+connect().use(
+  connect.session({
+    store: new SequelizeStore(options),
+    secret: "CHANGEME",
+  })
+);
