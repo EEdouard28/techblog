@@ -16,6 +16,7 @@ const sequelize = require('./config/connection');
 const app = express();
 const PORT =  process.env.PORT || 3001;
 //Set up sessions
+//stores the session data on the client in a cookie
 const sess = {
     secret: '',
     cookie: {},
