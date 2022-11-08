@@ -1,8 +1,8 @@
-const user = require('./user');
-const blog = require('./blog');
-const comment = require('./comment');
+const User = require('./user');
+const Blog = require('./blog');
+const Comment = require('./comment');
 
-user.hasMany(blog)
-blog.hasMany(comment)
+User.hasMany(Blog)
+Blog.hasMany(Comment)
 
-module.exports = { user, blog, comment };
+module.exports = { User, Blog, Comment };

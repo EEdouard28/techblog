@@ -17,7 +17,7 @@ const sequelize = require('./config/connection');
 const app = express();
 const PORT =  process.env.PORT || 3001;
 
-const hbs = exphbs.create({});
+
 //Set up sessions
 //stores the session data on the client in a cookie
 const sess = {
@@ -30,7 +30,7 @@ const sess = {
     }),
 };
 app.use(session(sess));
-
+const hbs = exphbs.create();
 // Set Handlebars as the default template engine
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
