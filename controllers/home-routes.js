@@ -1,14 +1,34 @@
 const router = require('express').Router();
+const {Blog, User, Comment} = require("../models")
 
+router.get("/", async (req, res) => {
+    try {
+        const postData = await Blog.findAll({})
 
-router.get("/", (req, res) => {
-    res.render("all", {layout: "main"})
+        const blogs = postData.map(blog => blog.get({plain: true}))
+
+        res.render("all", {blogs})
+    } catch (err){
+        res.json(err)
+    }
 })
 
 
+router.get("/login", (req, res) => {
+    if(req.session.loggedIn){
+        res.redirect("/")
+        return 
+    }
+    res.render("login",{layout: "main"})
+})
 
-
-
+router.get("/signup", (req, res) => {
+    if(req.session.loggedIn){
+        res.redirect("/")
+        return 
+    }
+    res.render("signup",{layout: "main"})
+})
 
 
 

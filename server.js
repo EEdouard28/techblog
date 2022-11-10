@@ -16,7 +16,8 @@ const sequelize = require('./config/connection');
 //Express App
 const app = express();
 const PORT =  process.env.PORT || 3001;
-
+const controllers = require("./controllers");
+const api = require("./controllers/api");
 
 //Set up sessions
 //stores the session data on the client in a cookie
@@ -38,10 +39,14 @@ app.set('view engine', 'handlebars');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true}));
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.use(controllers);
+app.use(api);
 //Route setup ///add route
 // app.use(require('./controllers'));
-app.use(require('./controllers/'));
+// app.use(require('./controllers/'));
+// app.use(require('./controllers/api'));
+
+
 
 //Connect to database before starting express.js server
 //Starts server
