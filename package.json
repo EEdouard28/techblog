@@ -3,6 +3,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "engines": {
+    "node": "0.10.41",
+    "npm": "1.4.29"
+  },
   "devDependencies": {
     "nodemon": "^2.0.20"
   },
