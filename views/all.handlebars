@@ -1,11 +1,13 @@
+  <div class="navheader">
+  <a class="navlinks" href="/">Home</a>
+     {{#if loggedIn}} 
+      <button id="logout" href="/logout">Log Out</button>
+     {{else}}
+    <a href="/login">Login</a> 
+     {{/if}}  
+  </div>
 <h2>Welcome!</h2>
 {{#each blogs}}
-<h3>{{title}}</h3>
-<h3>{{body}}</h3>
+<h3 class="blogcontent">{{title}}</h3>
+<h3 class="blogcontent">{{body}}</h3>
 {{/each}}
-  <a href="/">Home</a>
-      {{#if loggedIn}}
-      <button id="logout">Log Out</button>
-      {{else}}
-      <a href="/login">Login</a>
-      {{/if}}

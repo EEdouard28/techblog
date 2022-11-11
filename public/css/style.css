@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
     --primary: #815B5B;
     --secondary: #FFF8EA;
@@ -12,36 +16,50 @@
     --border-radius: 0.3rem;
   }
   
+  h1 {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+    }
+
+  header {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: var(--primary);
+    color: var(--light);
+  }
+  
+  .navheader {
+    float: right;
+    margin-right: 15px;
+    }
+  
+    .navlinks {
+      display: inline-block;
+      padding: 5px;
+    }
+  
+
    body {
     font-family: 'Roboto', sans-serif;
-    /* margin: 0; */
-    display: flex;
-    /* flex-direction: column; */
-    /* min-height: 100vh; */
-    /* justify-content: flex-start; */
     background-color: var(--secondary);
   } 
 
-  /* .blog-card {
-    flex: 0;
-    background-color: var(--tertiary);
-    padding: 80px;
-    text-align: center;
-    color: var(--light);
-    
-  } */
-  
-  header {
-    display:flex;
+  .blogcontent {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    padding: 40px;
-    background: var(--primary);
-    color: var(--light);
-    width: 100%;
-    margin: 0 auto;
-    align-items: center;
   }
+
+  .flex-container {
   
+  }
+
   /* main {
     display: flex;
     flex-wrap: wrap;
@@ -74,38 +92,40 @@
   }
    */
 
-/*   
-  .btn-no-style {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 100%;
-    transition: color 0.1s;
-    margin-left: 16px;
-  }
-   */
+  
+ 
+  
 
   /* CARDS */
-  .flex-container {
+  /* .flex-container {
    display: flex; 
    justify-content: center;
    margin: 0 auto;
    align-items: center;
-  }
+  } */
 
  
  .card { 
     align-items: center;
     border: 5px double var(--dark);
     border-radius: 5px;
-     background-color: var(--light); 
+    background-color: var(--light); 
     color: var(--dark);
-    width: 40vw; 
-    height: 20vh;
+    width: 60vw; 
+    height: 25vh;
     text-align: center;
    } 
+
+   p {
+    font-weight: bold;
+    text-decoration: underline;
+   }
+
+   .btn {
+    margin-top: 10px;
+    height: 40px;
+   }
+
 
   /* .card header {
     color: var(--light);
