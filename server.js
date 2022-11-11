@@ -41,12 +41,6 @@ app.use(express.urlencoded({ extended: true}));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(controllers);
 app.use(api);
-//Route setup ///add route
-// app.use(require('./controllers'));
-// app.use(require('./controllers/'));
-// app.use(require('./controllers/api'));
-
-
 
 //Connect to database before starting express.js server
 //Starts server

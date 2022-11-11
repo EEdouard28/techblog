@@ -15,6 +15,12 @@
       <main class="container container-fluid mt-5">
         {{{ body }}}
       </main>
+       <a href="/">Home</a>
+      {{#if loggedIn}}
+      <button id="logout">Log Out</button>
+      {{else}}
+      <a href="/login">Login</a>
+      {{/if}}
   </div>
   </body>
 

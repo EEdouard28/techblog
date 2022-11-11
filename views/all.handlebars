@@ -1,6 +1,11 @@
-
 <h2>Homepage All</h2>
 {{#each blogs}}
 <h3>{{title}}</h3>
 <h3>{{body}}</h3>
 {{/each}}
+  <a href="/">Home</a>
+      {{#if loggedIn}}
+      <button id="logout">Log Out</button>
+      {{else}}
+      <a href="/login">Login</a>
+      {{/if}}
