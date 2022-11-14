@@ -22,8 +22,13 @@ const api = require("./controllers/api");
 //Set up sessions
 //stores the session data on the client in a cookie
 const sess = {
-    secret: 'something',
-    cookie: {maxAge: 86000},
+    secret: process.env.SESSION_SECRET,
+    cookie: {
+        maxAge: 86000,
+        httpOnly: true,
+        secure: false,
+        sameSite: "strict",
+    },
     resave: false, 
     saveUninitializaed: false,
     store: new SequelizeStore({
