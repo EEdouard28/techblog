@@ -15,7 +15,7 @@ const sequelize = require('./config/connection');
 
 //Express App
 const app = express();
-const PORT =  process.env.PORT || 3001;
+let PORT =  process.env.PORT || 3001;
 const controllers = require("./controllers");
 const api = require("./controllers/api");
 
