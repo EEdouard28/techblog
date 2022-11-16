@@ -16,11 +16,12 @@
        <div class="navheader">
       <a class="navlinks" href="/">Home</a>
      {{#if loggedIn}} 
-      <button id="logout" href="/logout">Log Out</button>
+      <button id="logout-btn" type="button" class="btn btn-primary mx-1" href="/logout">Log Out</button>
      {{else}}
-    <a href="/login">Login</a> 
+       <button id="login-btn" type="button" class="btn btn-primary mx-1" href="/login">Login</button> 
      {{/if}}  
      </div>
+     
        <main class="blog-card container-fluid mt-5">
         <div class="blogcontent">
         {{{ body }}}
@@ -30,5 +31,6 @@
   </body>
 
 </html>
-<script src="/js/logout.js"></script>
+{{!-- <script src="/js/logout.js"></script> --}}
+<script src="../../public/js/logout.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
