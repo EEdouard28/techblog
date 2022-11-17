@@ -1,15 +1,15 @@
-const router = require('express').Router();
+const router = require("express").Router();
+const { Blog, User, Comment } = require("../models/");
 
+router.get("/", async (req, res) => {
+  try {
+    // const blogData = await Blog.findAll({ include: [User] });
+    // const blogs = blogData.map((blog) => blog.get({ plain: true }));
 
-router.get("/", (req, res) => {
-    res.render("blog", {layout: "dashboard"})
-})
-
-
-
-
-
-
-
+    res.render("blog", { layout: "dashboard" });
+  } catch (err) {
+    res.json(err);
+  }
+});
 
 module.exports = router;

@@ -9,8 +9,26 @@
     <p>Message</p>
     <input type="text" id="blog-body" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
    
-     <button class="blogbtn btn btn-primary" type="submit">Submit</button>
-     </form>
- </div>
+     <button class="blogbtn btn btn-primary btn-sm" type="submit">Submit</button>
+    </form>
 
+<form class="form blog-form">
+      <span class="blogcard"></span>
+    <p>Title</p>
+    <input type="text" id="blog-title" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+    
+    <span class="blogcard"></span>
+    <p>Message</p>
+    <input type="text" id="blog-body" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+   
+     <button class="blogbtn btn btn-primary btn-sm" type="submit">Submit</button>
+     </form>
+
+ </div>
+ <div>
+{{#each blogs}}
+<h2>{{title}}</h2>
+<h2>{{body}}</h2>
+{{/each}}
+ </div>
 <script src="/js/blog.js"></script>

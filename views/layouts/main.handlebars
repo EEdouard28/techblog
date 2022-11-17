@@ -13,17 +13,25 @@
 <body>
   <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between align-center p-2">
-      <h1>
-        &#127881 The Tech Blog &#127881
-      </h1>
+      <nav> 
+         <h1>My Tech Blog </h1>
+        <a href="/">Home</a>
+{{#if loggedIn}}
+     
+          <a href="/dashboard">Dashboard</a>
+          <button id="logout">Logout</button>
+          {{else}}
+   <a href="/login">Login</a>
+   {{/if}} </nav>
     </header>
-      <main class="container container-fluid mt-5">
+      <div class="container container-fluid mt-5">
         {{{ body }}}
-      </main>
-    
+      </div>
   </div>
-  </body>
-
-</html>
-<script src="/js/logout.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="/js/logout.js"></script>
+</body>
+</html>
+
+
