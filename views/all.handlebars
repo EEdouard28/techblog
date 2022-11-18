@@ -4,6 +4,7 @@
   <a class="navlinks" href="/">Home</a>
      {{#if loggedIn}} 
       <a class="logout" href="/logout">Log Out</a>
+      <a class="dashboard" href="/dashboard">Dashboard</a>
      {{else}}
     <a class="navlinks" href="/login">Login</a> 
     <a class="navlinks" href="/signup">Sign-Up!</a> 
@@ -16,5 +17,5 @@
 <h3 class="blogcontent">{{body}}</h3>
 {{/each}}
 </main>
-
+<script src="/js/logout.js"></script>
 </div>
