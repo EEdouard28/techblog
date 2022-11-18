@@ -1,14 +1,20 @@
+  <div class="div container">
+
   <div class="navheader">
   <a class="navlinks" href="/">Home</a>
      {{#if loggedIn}} 
-      <button id="logout" href="/logout">Log Out</button>
+      <a class="logout" href="/logout">Log Out</a>
      {{else}}
     <a class="navlinks" href="/login">Login</a> 
     <a class="navlinks" href="/signup">Sign-Up!</a> 
      {{/if}}  
   </div>
 <h2>Welcome!</h2>
+<main>
 {{#each blogs}}
 <h3 class="blogcontent">{{title}}</h3>
 <h3 class="blogcontent">{{body}}</h3>
 {{/each}}
+</main>
+
+</div>

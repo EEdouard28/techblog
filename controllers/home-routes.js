@@ -19,7 +19,7 @@ router.get("/login", (req, res) => {
         res.redirect("/")
         return 
     }
-    res.render("login",{layout: "main"})
+    res.render("login",{layout: "main", loggedIn: req.session.loggedIn})
 })
 
 router.get("/signup", (req, res) => {
