@@ -7,7 +7,7 @@ router.get("/", async (req, res) => {
 
         const blogs = postData.map(blog => blog.get({plain: true}))
 
-        res.render("all", {layout: "main", blogs});
+        res.render("all", {layout: "main", blogs, loggedIn: req.session.loggedIn});
     } catch (err){
         res.json(err);
     };
@@ -19,7 +19,7 @@ router.get("/login", (req, res) => {
         res.redirect("/")
         return 
     }
-    res.render("login",{layout: "main", loggedIn: req.session.loggedIn})
+    res.render("login",{layout: "main"})
 })
 
 router.get("/signup", (req, res) => {
