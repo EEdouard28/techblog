@@ -121,28 +121,16 @@
     text-decoration: underline;
    }
 
+   h4, .blogtext {
+    font-family: 'Roboto', sans-serif;
+   font-size: 1.5rem;
+   }
+
    .btn {
     margin-top: 10px;
     height: 40px;
    }
 
 
-  /* .card header {
-    color: var(--light);
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0;
-    background-color: var(--tertiary);
-    padding: 0.625rem;
-    border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
-  } */
-  
-  /* .card-body {
-    font-size: 1.4rem;
-    text-align: center;
-    font-weight: bold;
- 
-  } */
-  
-  /* LAYOUT */
+
  

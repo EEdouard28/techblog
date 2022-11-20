@@ -13,8 +13,16 @@
 <h2>Welcome!</h2>
 <main>
 {{#each blogs}}
-<h3 class="blogcontent">{{title}}</h3>
-<h3 class="blogcontent">{{body}}</h3>
+<div class="card">
+  <div class="card-body">
+    <h3>
+      Title: <h4 class="blogtext">{{title}}</h4>
+    </h3>
+    <h3>
+      Message: <h4 class="blogtext">{{body}}</h4>
+    </h3>
+  </div>
+</div>
 {{/each}}
 </main>
 <script src="/js/logout.js"></script>
