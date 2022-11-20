@@ -8,7 +8,7 @@
 
   
   ## Description
-  
+  This project is a CMS style blog project utilizing the MVC structure. In this Tech Blog a user is allowed to register/sign-up, login, post a blog, view post, and leave comments. Handlebars.js is being used as the templating language, Sequelize for the back-end mapping, and the express-session npm package for authentication. 
 
 ## Table of Contents
 - [Description](#description)
@@ -20,23 +20,34 @@
 - [Questions](#questions)
 
   ## Installation
-  
+  Clone the repo on your root folder and run the following commands from the CLI: 
+- npm i init -y
+- npm i
+- npm i bcrypt
+- npm i connect-session-sequelize
+- npm i dotenv
+- npm i express
+- npm i express-handlebars
+- npm i express-session
+- npm i handlebars
+- npm i inquirer
+- npm i mysql2
+- npm i nodemon
+- npm i sequelize
 
-  ## Usage
-  
+- *NodeJS is also required on your system.*
+
+npm start server.js
 
   ## Credits
-  
+  Evince Edouard
 
   ## Questions
-  For any questions please email me at: evince.edouard@gmail.com
-  or Visit my Github at: http://github.com/EEdouard28
+ - Email: evince.edouard@gmail.com
+ - Github: http://github.com/EEdouard28
 
   ### License
   none
-
-  ## Tests
-  
 
 [Handlebarsjs.com]: https://img.shields.io/badge/Handlebars-Handlebars-blue
 [Handlebars-url]: https://handlebarsjs.com/

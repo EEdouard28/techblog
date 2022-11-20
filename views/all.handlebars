@@ -3,8 +3,9 @@
   <div class="navheader">
   <a class="navlinks" href="/">Home</a>
      {{#if loggedIn}} 
-       <a id="logout" type="button" class="btn navlinks" href="/logout">Log Out</a>
+       <a class="logout navlinks" type="button" class="btn" href="/logout">Log Out</a>
       <a class="dashboard navlinks" href="/dashboard">Dashboard</a>
+ 
      {{else}}
     <a class="navlinks" href="/login">Login</a> 
     <a class="navlinks" href="/signup">Sign-Up!</a> 

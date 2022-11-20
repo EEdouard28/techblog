@@ -1,4 +1,4 @@
-const logoutBtn = document.getElementById("logout");
+const logoutBtn = document.getElementsByClassName("logout");
 
 const logout = async () => {
   const response = await fetch("/api/users/logout", {
@@ -14,4 +14,4 @@ const logout = async () => {
 };
 
 if (logoutBtn)
-  document.querySelector("#logout").addEventListener("click", logout);
+  document.querySelector(".logout").addEventListener("click", logout);

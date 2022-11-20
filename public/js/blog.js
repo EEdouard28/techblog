@@ -13,7 +13,7 @@ const blogFormHandler = async (event) => {
 console.log(response)
     if (response.ok) {
       console.log(response)
-      document.location.replace("/dashboard");
+      document.location.replace("/");
     } else {
       alert("Failed to log in.");
     }
